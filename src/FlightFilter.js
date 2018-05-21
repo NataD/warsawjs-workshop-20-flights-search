@@ -32,8 +32,8 @@ export default class FlightFilter extends React.Component{
         return (
             <div>
                 <input type="checkbox" checked={this.state.priceToggled} onChange={this.onChangeCheckbox("priceToggled")}/>
-                <input type="number" value={this.state.priceMax} onChange={this.onChange("priceMax")} />
                 <input type="number" value={this.state.priceMin} onChange={this.onChange("priceMin")} />
+                <input type="number" value={this.state.priceMax} onChange={this.onChange("priceMax")} />
             </div>
         )
     }
